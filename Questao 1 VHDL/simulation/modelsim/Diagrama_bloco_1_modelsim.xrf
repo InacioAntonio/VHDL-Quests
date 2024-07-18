@@ -1,0 +1,7 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Inaci/Documents/Lista VHDL/Diagrama_bloco_1.bdf
+source_file = 1, C:/Users/Inaci/Documents/Lista VHDL/db/Diagrama_bloco_1.cbx.xml
+design_name = Diagrama_bloco_1
+instance = comp, \a~I\, a, Diagrama_bloco_1, 1
+instance = comp, \b~I\, b, Diagrama_bloco_1, 1
+instance = comp, \s~I\, s, Diagrama_bloco_1, 1

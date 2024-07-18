@@ -1,0 +1,40 @@
+|Questao4
+pin_name4 <= 7402:inst3.1
+c => 7408:inst2.3
+c => 7408:inst1.3
+a => 7408:inst1.2
+a => 7408:inst.2
+b => 7408:inst.3
+
+
+|Questao4|7402:inst3
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Questao4|7427:inst4
+1 <= 5.DB_MAX_OUTPUT_PORT_TYPE
+4 => 5.IN0
+3 => 5.IN1
+2 => 5.IN2
+
+
+|Questao4|7408:inst2
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Questao4|7408:inst1
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Questao4|7408:inst
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
