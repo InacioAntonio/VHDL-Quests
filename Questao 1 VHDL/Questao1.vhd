@@ -1,0 +1,9 @@
+
+entity Questao1 is
+port(a,b: IN BIT; s: OUT BIT);
+end Questao1;
+
+architecture comportamento of Questao1 is
+begin
+ s <= a xor b;
+ end comportamento;
