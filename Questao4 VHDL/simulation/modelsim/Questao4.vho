@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
--- DATE "07/17/2024 21:02:39"
+-- DATE "07/19/2024 10:33:12"
 
 -- 
 -- Device: Altera EP2C35F672C8 Package FBGA672
@@ -41,10 +41,10 @@ ENTITY 	Questao4 IS
 END Questao4;
 
 -- Design Ports Information
--- pin_name4	=>  Location: PIN_B11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- c	=>  Location: PIN_C13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- a	=>  Location: PIN_D13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- b	=>  Location: PIN_B12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- pin_name4	=>  Location: PIN_AE23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- c	=>  Location: PIN_P25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- a	=>  Location: PIN_N25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- b	=>  Location: PIN_N26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 
 
 ARCHITECTURE structure OF Questao4 IS
@@ -62,8 +62,8 @@ SIGNAL ww_c : std_logic;
 SIGNAL ww_a : std_logic;
 SIGNAL ww_b : std_logic;
 SIGNAL \b~combout\ : std_logic;
-SIGNAL \c~combout\ : std_logic;
 SIGNAL \a~combout\ : std_logic;
+SIGNAL \c~combout\ : std_logic;
 SIGNAL \inst4|5~0_combout\ : std_logic;
 
 BEGIN
@@ -76,7 +76,7 @@ ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
 
--- Location: PIN_B12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- Location: PIN_N26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \b~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -102,33 +102,7 @@ PORT MAP (
 	padio => ww_b,
 	combout => \b~combout\);
 
--- Location: PIN_C13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\c~I\ : cycloneii_io
--- pragma translate_off
-GENERIC MAP (
-	input_async_reset => "none",
-	input_power_up => "low",
-	input_register_mode => "none",
-	input_sync_reset => "none",
-	oe_async_reset => "none",
-	oe_power_up => "low",
-	oe_register_mode => "none",
-	oe_sync_reset => "none",
-	operation_mode => "input",
-	output_async_reset => "none",
-	output_power_up => "low",
-	output_register_mode => "none",
-	output_sync_reset => "none")
--- pragma translate_on
-PORT MAP (
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	devoe => ww_devoe,
-	oe => GND,
-	padio => ww_c,
-	combout => \c~combout\);
-
--- Location: PIN_D13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- Location: PIN_N25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \a~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -154,23 +128,49 @@ PORT MAP (
 	padio => ww_a,
 	combout => \a~combout\);
 
--- Location: LCCOMB_X30_Y35_N0
+-- Location: PIN_P25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+\c~I\ : cycloneii_io
+-- pragma translate_off
+GENERIC MAP (
+	input_async_reset => "none",
+	input_power_up => "low",
+	input_register_mode => "none",
+	input_sync_reset => "none",
+	oe_async_reset => "none",
+	oe_power_up => "low",
+	oe_register_mode => "none",
+	oe_sync_reset => "none",
+	operation_mode => "input",
+	output_async_reset => "none",
+	output_power_up => "low",
+	output_register_mode => "none",
+	output_sync_reset => "none")
+-- pragma translate_on
+PORT MAP (
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	devoe => ww_devoe,
+	oe => GND,
+	padio => ww_c,
+	combout => \c~combout\);
+
+-- Location: LCCOMB_X64_Y19_N0
 \inst4|5~0\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \inst4|5~0_combout\ = (\c~combout\) # ((\b~combout\ & \a~combout\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1110111011001100",
+	lut_mask => "1111111110100000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	dataa => \b~combout\,
-	datab => \c~combout\,
-	datad => \a~combout\,
+	datac => \a~combout\,
+	datad => \c~combout\,
 	combout => \inst4|5~0_combout\);
 
--- Location: PIN_B11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_AE23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \pin_name4~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (

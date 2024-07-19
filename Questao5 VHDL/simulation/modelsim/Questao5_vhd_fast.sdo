@@ -24,7 +24,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "Questao5")
-  (DATE "07/17/2024 21:17:11")
+  (DATE "07/19/2024 10:37:00")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 64-Bit")
   (VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition")
@@ -33,10 +33,19 @@
 
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
+    (INSTANCE \\b\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio combout (581:581:581) (581:581:581))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_asynch_io")
     (INSTANCE \\a\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH padio combout (465:465:465) (465:465:465))
+        (IOPATH padio combout (581:581:581) (581:581:581))
       )
     )
   )
@@ -45,16 +54,7 @@
     (INSTANCE \\c\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH padio combout (561:561:561) (561:561:561))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\b\~I\\.asynch_inst)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (561:561:561) (561:561:561))
+        (IOPATH padio combout (581:581:581) (581:581:581))
       )
     )
   )
@@ -63,11 +63,11 @@
     (INSTANCE \\s\~0\\)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (2827:2827:2827) (2827:2827:2827))
-        (PORT datab (279:279:279) (279:279:279))
-        (PORT datad (276:276:276) (276:276:276))
+        (PORT dataa (154:154:154) (154:154:154))
+        (PORT datac (149:149:149) (149:149:149))
+        (PORT datad (149:149:149) (149:149:149))
         (IOPATH dataa combout (180:180:180) (180:180:180))
-        (IOPATH datab combout (175:175:175) (175:175:175))
+        (IOPATH datac combout (107:107:107) (107:107:107))
         (IOPATH datad combout (59:59:59) (59:59:59))
       )
     )
@@ -77,8 +77,8 @@
     (INSTANCE \\s\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (PORT datain (256:256:256) (256:256:256))
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (PORT datain (889:889:889) (889:889:889))
+        (IOPATH datain padio (1563:1563:1563) (1563:1563:1563))
       )
     )
   )

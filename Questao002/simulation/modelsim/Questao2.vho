@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
--- DATE "07/17/2024 20:13:56"
+-- DATE "07/19/2024 10:27:53"
 
 -- 
 -- Device: Altera EP2C35F672C8 Package FBGA672
@@ -28,25 +28,23 @@
 
 LIBRARY CYCLONEII;
 LIBRARY IEEE;
-LIBRARY STD;
 USE CYCLONEII.CYCLONEII_COMPONENTS.ALL;
 USE IEEE.STD_LOGIC_1164.ALL;
-USE STD.STANDARD.ALL;
 
 ENTITY 	Questao2 IS
     PORT (
 	a : IN std_logic;
 	b : IN std_logic;
 	c : IN std_logic;
-	s : OUT STD.STANDARD.bit
+	s : OUT std_logic
 	);
 END Questao2;
 
 -- Design Ports Information
--- s	=>  Location: PIN_B11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- c	=>  Location: PIN_C13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- b	=>  Location: PIN_D13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- a	=>  Location: PIN_B12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- s	=>  Location: PIN_AE23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- c	=>  Location: PIN_P25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- b	=>  Location: PIN_N26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- a	=>  Location: PIN_N25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 
 
 ARCHITECTURE structure OF Questao2 IS
@@ -63,9 +61,9 @@ SIGNAL ww_a : std_logic;
 SIGNAL ww_b : std_logic;
 SIGNAL ww_c : std_logic;
 SIGNAL ww_s : std_logic;
+SIGNAL \b~combout\ : std_logic;
 SIGNAL \a~combout\ : std_logic;
 SIGNAL \c~combout\ : std_logic;
-SIGNAL \b~combout\ : std_logic;
 SIGNAL \s~0_combout\ : std_logic;
 
 BEGIN
@@ -73,64 +71,12 @@ BEGIN
 ww_a <= a;
 ww_b <= b;
 ww_c <= c;
-s <= IEEE.STD_LOGIC_1164.TO_BIT(ww_s);
+s <= ww_s;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
 
--- Location: PIN_B12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\a~I\ : cycloneii_io
--- pragma translate_off
-GENERIC MAP (
-	input_async_reset => "none",
-	input_power_up => "low",
-	input_register_mode => "none",
-	input_sync_reset => "none",
-	oe_async_reset => "none",
-	oe_power_up => "low",
-	oe_register_mode => "none",
-	oe_sync_reset => "none",
-	operation_mode => "input",
-	output_async_reset => "none",
-	output_power_up => "low",
-	output_register_mode => "none",
-	output_sync_reset => "none")
--- pragma translate_on
-PORT MAP (
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	devoe => ww_devoe,
-	oe => GND,
-	padio => ww_a,
-	combout => \a~combout\);
-
--- Location: PIN_C13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\c~I\ : cycloneii_io
--- pragma translate_off
-GENERIC MAP (
-	input_async_reset => "none",
-	input_power_up => "low",
-	input_register_mode => "none",
-	input_sync_reset => "none",
-	oe_async_reset => "none",
-	oe_power_up => "low",
-	oe_register_mode => "none",
-	oe_sync_reset => "none",
-	operation_mode => "input",
-	output_async_reset => "none",
-	output_power_up => "low",
-	output_register_mode => "none",
-	output_sync_reset => "none")
--- pragma translate_on
-PORT MAP (
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	devoe => ww_devoe,
-	oe => GND,
-	padio => ww_c,
-	combout => \c~combout\);
-
--- Location: PIN_D13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- Location: PIN_N26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \b~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -156,23 +102,75 @@ PORT MAP (
 	padio => ww_b,
 	combout => \b~combout\);
 
--- Location: LCCOMB_X30_Y35_N0
+-- Location: PIN_N25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+\a~I\ : cycloneii_io
+-- pragma translate_off
+GENERIC MAP (
+	input_async_reset => "none",
+	input_power_up => "low",
+	input_register_mode => "none",
+	input_sync_reset => "none",
+	oe_async_reset => "none",
+	oe_power_up => "low",
+	oe_register_mode => "none",
+	oe_sync_reset => "none",
+	operation_mode => "input",
+	output_async_reset => "none",
+	output_power_up => "low",
+	output_register_mode => "none",
+	output_sync_reset => "none")
+-- pragma translate_on
+PORT MAP (
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	devoe => ww_devoe,
+	oe => GND,
+	padio => ww_a,
+	combout => \a~combout\);
+
+-- Location: PIN_P25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+\c~I\ : cycloneii_io
+-- pragma translate_off
+GENERIC MAP (
+	input_async_reset => "none",
+	input_power_up => "low",
+	input_register_mode => "none",
+	input_sync_reset => "none",
+	oe_async_reset => "none",
+	oe_power_up => "low",
+	oe_register_mode => "none",
+	oe_sync_reset => "none",
+	operation_mode => "input",
+	output_async_reset => "none",
+	output_power_up => "low",
+	output_register_mode => "none",
+	output_sync_reset => "none")
+-- pragma translate_on
+PORT MAP (
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	devoe => ww_devoe,
+	oe => GND,
+	padio => ww_c,
+	combout => \c~combout\);
+
+-- Location: LCCOMB_X64_Y19_N0
 \s~0\ : cycloneii_lcell_comb
 -- Equation(s):
--- \s~0_combout\ = (\a~combout\ & (!\c~combout\ & !\b~combout\)) # (!\a~combout\ & (\c~combout\))
+-- \s~0_combout\ = (\a~combout\ & (!\b~combout\ & !\c~combout\)) # (!\a~combout\ & ((\c~combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0100010001100110",
+	lut_mask => "0000111101010000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \a~combout\,
-	datab => \c~combout\,
-	datad => \b~combout\,
+	dataa => \b~combout\,
+	datac => \a~combout\,
+	datad => \c~combout\,
 	combout => \s~0_combout\);
 
--- Location: PIN_B11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_AE23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \s~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (

@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Questao4
-Wed Jul 17 21:02:39 2024
+Fri Jul 19 10:33:12 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Jul 17 21:02:39 2024 ;
+; EDA Netlist Writer Status ; Successful - Fri Jul 19 10:33:12 2024 ;
 ; Revision Name             ; Questao4                              ;
 ; Top-level Entity Name     ; Questao4                              ;
 ; Family                    ; Cyclone II                            ;
@@ -66,16 +66,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+----------------------------------------------------------------------------------+
-; Simulation Generated Files                                                       ;
-+----------------------------------------------------------------------------------+
-; Generated Files                                                                  ;
-+----------------------------------------------------------------------------------+
-; C:/Users/Inaci/Documents/Questao4 VHDL/simulation/modelsim/Questao4.vho          ;
-; C:/Users/Inaci/Documents/Questao4 VHDL/simulation/modelsim/Questao4_fast.vho     ;
-; C:/Users/Inaci/Documents/Questao4 VHDL/simulation/modelsim/Questao4_vhd.sdo      ;
-; C:/Users/Inaci/Documents/Questao4 VHDL/simulation/modelsim/Questao4_vhd_fast.sdo ;
-+----------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                  ;
++---------------------------------------------------------------------------------------------+
+; Generated Files                                                                             ;
++---------------------------------------------------------------------------------------------+
+; C:/Users/Inaci/Documents/Lista VHDL/Questao4 VHDL/simulation/modelsim/Questao4.vho          ;
+; C:/Users/Inaci/Documents/Lista VHDL/Questao4 VHDL/simulation/modelsim/Questao4_fast.vho     ;
+; C:/Users/Inaci/Documents/Lista VHDL/Questao4 VHDL/simulation/modelsim/Questao4_vhd.sdo      ;
+; C:/Users/Inaci/Documents/Lista VHDL/Questao4 VHDL/simulation/modelsim/Questao4_vhd_fast.sdo ;
++---------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -84,13 +84,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Jul 17 21:02:39 2024
+    Info: Processing started: Fri Jul 19 10:33:11 2024
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Questao4 -c Questao4
-Info (204026): Generated files "Questao4.vho", "Questao4_fast.vho", "Questao4_vhd.sdo" and "Questao4_vhd_fast.sdo" in directory "C:/Users/Inaci/Documents/Questao4 VHDL/simulation/modelsim/" for EDA simulation tool
+Info (204026): Generated files "Questao4.vho", "Questao4_fast.vho", "Questao4_vhd.sdo" and "Questao4_vhd_fast.sdo" in directory "C:/Users/Inaci/Documents/Lista VHDL/Questao4 VHDL/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4522 megabytes
-    Info: Processing ended: Wed Jul 17 21:02:39 2024
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 4518 megabytes
+    Info: Processing ended: Fri Jul 19 10:33:12 2024
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 

@@ -1,13 +1,13 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/Inaci/Documents/Questao002/Questao2.vhd
-source_file = 1, C:/Users/Inaci/Documents/Questao002/db/Questao2.cbx.xml
+source_file = 1, C:/Users/Inaci/Documents/Lista VHDL/Questao002/Questao2.vhd
+source_file = 1, C:/Users/Inaci/Documents/Lista VHDL/Questao002/db/Questao2.cbx.xml
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
 design_name = Questao2
+instance = comp, \b~I\, b, Questao2, 1
 instance = comp, \a~I\, a, Questao2, 1
 instance = comp, \c~I\, c, Questao2, 1
-instance = comp, \b~I\, b, Questao2, 1
 instance = comp, \s~0\, s~0, Questao2, 1
 instance = comp, \s~I\, s, Questao2, 1

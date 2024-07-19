@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Questao4
-Wed Jul 17 21:02:38 2024
+Fri Jul 19 10:33:11 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -121,26 +121,26 @@ No paths to report.
 No paths to report.
 
 
-+------------------------------------------------------+
-; Propagation Delay                                    ;
-+------------+-------------+--------+----+----+--------+
-; Input Port ; Output Port ; RR     ; RF ; FR ; FF     ;
-+------------+-------------+--------+----+----+--------+
-; a          ; pin_name4   ; 6.345  ;    ;    ; 6.345  ;
-; b          ; pin_name4   ; 11.391 ;    ;    ; 11.391 ;
-; c          ; pin_name4   ; 6.770  ;    ;    ; 6.770  ;
-+------------+-------------+--------+----+----+--------+
++----------------------------------------------------+
+; Propagation Delay                                  ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; a          ; pin_name4   ; 7.920 ;    ;    ; 7.920 ;
+; b          ; pin_name4   ; 8.225 ;    ;    ; 8.225 ;
+; c          ; pin_name4   ; 7.753 ;    ;    ; 7.753 ;
++------------+-------------+-------+----+----+-------+
 
 
-+------------------------------------------------------+
-; Minimum Propagation Delay                            ;
-+------------+-------------+--------+----+----+--------+
-; Input Port ; Output Port ; RR     ; RF ; FR ; FF     ;
-+------------+-------------+--------+----+----+--------+
-; a          ; pin_name4   ; 6.345  ;    ;    ; 6.345  ;
-; b          ; pin_name4   ; 11.391 ;    ;    ; 11.391 ;
-; c          ; pin_name4   ; 6.770  ;    ;    ; 6.770  ;
-+------------+-------------+--------+----+----+--------+
++----------------------------------------------------+
+; Minimum Propagation Delay                          ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; a          ; pin_name4   ; 7.920 ;    ;    ; 7.920 ;
+; b          ; pin_name4   ; 8.225 ;    ;    ; 8.225 ;
+; c          ; pin_name4   ; 7.753 ;    ;    ; 7.753 ;
++------------+-------------+-------+----+----+-------+
 
 
 ----------------------------
@@ -178,9 +178,9 @@ No paths to report.
 +------------+-------------+-------+----+----+-------+
 ; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
 +------------+-------------+-------+----+----+-------+
-; a          ; pin_name4   ; 2.695 ;    ;    ; 2.695 ;
-; b          ; pin_name4   ; 5.271 ;    ;    ; 5.271 ;
-; c          ; pin_name4   ; 2.817 ;    ;    ; 2.817 ;
+; a          ; pin_name4   ; 3.289 ;    ;    ; 3.289 ;
+; b          ; pin_name4   ; 3.367 ;    ;    ; 3.367 ;
+; c          ; pin_name4   ; 3.241 ;    ;    ; 3.241 ;
 +------------+-------------+-------+----+----+-------+
 
 
@@ -189,9 +189,9 @@ No paths to report.
 +------------+-------------+-------+----+----+-------+
 ; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
 +------------+-------------+-------+----+----+-------+
-; a          ; pin_name4   ; 2.695 ;    ;    ; 2.695 ;
-; b          ; pin_name4   ; 5.271 ;    ;    ; 5.271 ;
-; c          ; pin_name4   ; 2.817 ;    ;    ; 2.817 ;
+; a          ; pin_name4   ; 3.289 ;    ;    ; 3.289 ;
+; b          ; pin_name4   ; 3.367 ;    ;    ; 3.367 ;
+; c          ; pin_name4   ; 3.241 ;    ;    ; 3.241 ;
 +------------+-------------+-------+----+----+-------+
 
 
@@ -205,15 +205,15 @@ No paths to report.
 +------------------+-------+------+----------+---------+---------------------+
 
 
-+------------------------------------------------------+
-; Progagation Delay                                    ;
-+------------+-------------+--------+----+----+--------+
-; Input Port ; Output Port ; RR     ; RF ; FR ; FF     ;
-+------------+-------------+--------+----+----+--------+
-; a          ; pin_name4   ; 6.345  ;    ;    ; 6.345  ;
-; b          ; pin_name4   ; 11.391 ;    ;    ; 11.391 ;
-; c          ; pin_name4   ; 6.770  ;    ;    ; 6.770  ;
-+------------+-------------+--------+----+----+--------+
++----------------------------------------------------+
+; Progagation Delay                                  ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; a          ; pin_name4   ; 7.920 ;    ;    ; 7.920 ;
+; b          ; pin_name4   ; 8.225 ;    ;    ; 8.225 ;
+; c          ; pin_name4   ; 7.753 ;    ;    ; 7.753 ;
++------------+-------------+-------+----+----+-------+
 
 
 +----------------------------------------------------+
@@ -221,9 +221,9 @@ No paths to report.
 +------------+-------------+-------+----+----+-------+
 ; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
 +------------+-------------+-------+----+----+-------+
-; a          ; pin_name4   ; 2.695 ;    ;    ; 2.695 ;
-; b          ; pin_name4   ; 5.271 ;    ;    ; 5.271 ;
-; c          ; pin_name4   ; 2.817 ;    ;    ; 2.817 ;
+; a          ; pin_name4   ; 3.289 ;    ;    ; 3.289 ;
+; b          ; pin_name4   ; 3.367 ;    ;    ; 3.367 ;
+; c          ; pin_name4   ; 3.241 ;    ;    ; 3.241 ;
 +------------+-------------+-------+----+----+-------+
 
 
@@ -265,7 +265,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Jul 17 21:02:38 2024
+    Info: Processing started: Fri Jul 19 10:33:10 2024
 Info: Command: quartus_sta Questao4 -c Questao4
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -299,8 +299,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 4539 megabytes
-    Info: Processing ended: Wed Jul 17 21:02:38 2024
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Fri Jul 19 10:33:11 2024
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 
