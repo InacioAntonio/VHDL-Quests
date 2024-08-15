@@ -1,0 +1,7 @@
+|Questao4ListaVhdl
+A => parity.IN0
+B => parity.IN1
+C => parity.IN1
+parity <= parity.DB_MAX_OUTPUT_PORT_TYPE
+
+

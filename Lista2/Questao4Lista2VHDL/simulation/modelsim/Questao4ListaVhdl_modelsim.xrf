@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Inaci/Documents/Questao4Lista2VHDL/Questao4ListaVhdl.vhd
+source_file = 1, C:/Users/Inaci/Documents/Questao4Lista2VHDL/db/Questao4ListaVhdl.cbx.xml
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = Questao4ListaVhdl
+instance = comp, \B~I\, B, Questao4ListaVhdl, 1
+instance = comp, \A~I\, A, Questao4ListaVhdl, 1
+instance = comp, \C~I\, C, Questao4ListaVhdl, 1
+instance = comp, \parity~0\, parity~0, Questao4ListaVhdl, 1
+instance = comp, \parity~I\, parity, Questao4ListaVhdl, 1

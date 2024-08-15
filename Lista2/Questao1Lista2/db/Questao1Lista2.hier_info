@@ -1,0 +1,19 @@
+|Questao1Lista2
+btn1 => maq3.OUTPUTSELECT
+btn1 => maq4.OUTPUTSELECT
+btn1 => maq1.DATAIN
+btn2 => maq3.OUTPUTSELECT
+btn2 => maq4.OUTPUTSELECT
+btn2 => maq4.OUTPUTSELECT
+btn2 => maq2.DATAIN
+btn3 => maq3.DATAA
+btn3 => maq4.OUTPUTSELECT
+btn3 => maq3.DATAA
+btn4 => maq4.DATAA
+btn4 => maq4.DATAA
+maq1 <= btn1.DB_MAX_OUTPUT_PORT_TYPE
+maq2 <= btn2.DB_MAX_OUTPUT_PORT_TYPE
+maq3 <= maq3.DB_MAX_OUTPUT_PORT_TYPE
+maq4 <= maq4.DB_MAX_OUTPUT_PORT_TYPE
+
+
